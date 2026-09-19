@@ -1,0 +1,73 @@
+# ============================================================
+# gsa-array-genotyping
+# Keep individual-level genomic data and local resources out
+# of version control.
+# ============================================================
+
+# Raw Illumina array data
+*.idat
+*.IDAT
+*.gtc
+*.GTC
+
+# Variant/genotype files
+*.vcf
+*.vcf.gz
+*.bcf
+*.bcf.gz
+*.tbi
+*.csi
+
+# Illumina manifests and cluster resources
+*.bpm
+*.egt
+
+# Reference genomes and indexes
+*.fa
+*.fasta
+*.fna
+*.fa.gz
+*.fasta.gz
+*.fna.gz
+*.fai
+*.dict
+
+# Sample sheets / mappings / genotype lists
+sample_mapping.tsv
+sample_map.tsv
+sample_names.txt
+*_sample_names.txt
+*_gtc.list
+*.gtc.list
+
+# Runtime data directories
+raw_idat/
+gtc/
+vcf/
+resources/
+results/
+output/
+outputs/
+logs/
+qc/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Conda / virtual environments
+.conda/
+.venv/
+venv/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
